@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil - BTS SIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Assure que le corps prend toute la hauteur de la fenêtre */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #A50044;
+            /* Grenat */
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #A50044;
+            /* Grenat */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            /* Fixe le pied de page */
+            bottom: 0;
+            /* Positionne en bas de la page */
+            left: 0;
+            /* S'assure que le pied de page s'étend sur toute la largeur */
+            width: 100%;
+            /* S'assure que le pied de page couvre toute la largeur */
+        }
+
+        /* Ajout d'une marge en bas du corps pour éviter que le contenu ne soit masqué par le pied de page */
+        .content {
+            flex-grow: 1;
+            /* Permet au contenu de prendre tout l'espace disponible */
+            padding-bottom: 60px;
+            /* Espace pour le pied de page */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="TP1/presentation.html">TP 1</a>
+        <a href="Mission1/mission1.html">Mission 1</a>
+        <a href="tp2/index.html">TP 2</a>
+        <a href="Mission2/index.html">Mission 2</a>
+        <a href="TP3/programme.html">TP 3</a>
+        <a href="Mission3/certifications.html">Certifications</a>
+        <a href="Mission4/accueil.html">Mission 4</a>
+    </nav>
+
+    <div class="content">
+        <!-- Ici tu peux ajouter d'autres contenus si nécessaire -->
+    </div>
+
+    <footer>
+        <p>&copy; Soufiane Z - 2024 BTS SIO - Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

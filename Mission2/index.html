@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE PRINCIPALE</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            /* Couleur de fond gris clair */
+            font-family: Arial, sans-serif;
+            /* Police de caractères */
+            margin: 0;
+            /* Supprime les marges par défaut */
+            padding: 20px;
+            /* Espace autour du contenu */
+            overflow: hidden;
+            /* Empêche le défilement */
+        }
+
+        h1 {
+            font-size: 24px;
+            /* Taille de police pour le titre */
+            color: #004B87;
+            /* Couleur bleu FC Barcelone */
+            text-align: center;
+            /* Centre le texte */
+            margin-bottom: 20px;
+            /* Marge en bas du titre */
+        }
+
+        .container {
+            display: flex;
+            /* Utilise flexbox pour la mise en page côte à côte */
+            justify-content: space-between;
+            /* Espace entre les éléments */
+            align-items: flex-start;
+            /* Aligne les éléments en haut */
+            height: calc(100vh - 160px);
+            /* Ajuste la hauteur pour éviter le défilement */
+        }
+
+        iframe {
+            border: 2px solid #A50034;
+            /* Bordure grenat autour des iframes */
+            border-radius: 10px;
+            /* Coins arrondis pour les iframes */
+            margin: 0 10px;
+            /* Marge horizontale autour des iframes */
+            flex: 1;
+            /* Permet aux iframes de prendre l'espace disponible */
+            min-width: 300px;
+            /* Largeur minimale pour chaque iframe */
+            height: 100%;
+            /* Hauteur à 100% de la section */
+        }
+
+        a {
+            display: inline-block;
+            /* Permet d'utiliser padding */
+            padding: 10px 20px;
+            /* Espacement autour du texte */
+            background-color: #004B87;
+            /* Couleur bleu FC Barcelone */
+            color: #FFF;
+            /* Couleur du texte en blanc */
+            text-decoration: none;
+            /* Supprime le soulignement */
+            border-radius: 5px;
+            /* Coins arrondis */
+            transition: background-color 0.3s;
+            /* Animation au survol */
+            margin-top: 20px;
+            /* Marge en haut */
+            text-align: center;
+            /* Centre le texte du bouton */
+            display: block;
+            /* S'assure que le lien prend tout l'espace disponible */
+            width: 200px;
+            /* Largeur fixe pour le bouton */
+            margin-left: auto;
+            /* Centre le bouton horizontalement */
+            margin-right: auto;
+            /* Centre le bouton horizontalement */
+        }
+
+        a:hover {
+            background-color: #A50034;
+            /* Change la couleur au survol */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PAGE PRINCIPALE</h1>
+    <div class="container">
+        <iframe src="sommaire1.html" name="f1"></iframe>
+        <iframe src="emplacement.html" name="f2"></iframe>
+    </div>
+    <a href="../index.html">Retour au sommaire</a> <!-- Bouton de retour -->
+</body>
+
+</html>

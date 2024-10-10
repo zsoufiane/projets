@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            /* Couleur de fond gris clair */
+            font-family: Arial, sans-serif;
+            /* Police de caractères */
+            text-align: center;
+            /* Centre le texte */
+            margin: 0;
+            /* Supprime les marges par défaut */
+            padding: 20px;
+            /* Espace autour du contenu */
+        }
+
+        table {
+            margin: 0 auto;
+            /* Centre le tableau */
+            border-collapse: collapse;
+            /* Fusionne les bordures des cellules */
+        }
+
+        td {
+            padding: 10px;
+            /* Espacement autour des cellules */
+        }
+
+        label {
+            font-weight: bold;
+            /* Met le texte en gras */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            /* Prend toute la largeur de la cellule */
+            padding: 8px;
+            /* Espacement à l'intérieur des champs */
+            border: 2px solid #A50034;
+            /* Bordure grenat */
+            border-radius: 5px;
+            /* Coins arrondis */
+            box-sizing: border-box;
+            /* Inclut le padding et la bordure dans la largeur totale */
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #004B87;
+            /* Couleur bleu FC Barcelone */
+            color: #FFF;
+            /* Couleur du texte en blanc */
+            padding: 10px 20px;
+            /* Espacement autour du texte */
+            border: none;
+            /* Supprime la bordure par défaut */
+            border-radius: 5px;
+            /* Coins arrondis */
+            cursor: pointer;
+            /* Change le curseur au survol */
+            transition: background-color 0.3s;
+            /* Animation au survol */
+            margin: 5px;
+            /* Marge autour des boutons */
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #A50034;
+            /* Change la couleur au survol */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulaire d'Inscription</h1>
+    <br><br>
+    <center>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nom">Nom</label></td>
+                    <td><input type="text" name="t1" id="nom" required></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prénom</label></td>
+                    <td><input type="text" name="t2" id="prenom" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date de naissance</label></td>
+                    <td><input type="date" name="t3" id="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Mot de passe</label></td>
+                    <td><input type="password" name="t4" id="pass" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Votre âge</label></td>
+                    <td><input type="number" name="t5" id="age" min="18" required></td>
+                </tr>
+                <tr>
+                    <td><label for="test">Test</label></td>
+                    <td><input type="text" name="t6" id="test" size="60" placeholder="Tester le champ"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enregistrer" name="t7">
+                        <input type="reset" value="Effacer" name="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

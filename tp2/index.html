@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Principale</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            /* Couleur de fond claire */
+            color: #333;
+            /* Couleur du texte */
+            font-family: Arial, sans-serif;
+            /* Police */
+            text-align: center;
+            /* Centre tout le texte */
+            padding: 20px;
+            /* Ajoute de l'espace autour du contenu */
+        }
+
+        h1 {
+            color: #A50044;
+            /* Couleur grenat */
+            margin-bottom: 20px;
+            /* Espace sous le titre */
+        }
+
+        .iframe-container {
+            display: flex;
+            /* Utilisation de Flexbox pour le placement */
+            justify-content: center;
+            /* Centre les iframes horizontalement */
+        }
+
+        iframe {
+            border: 2px solid #004D98;
+            /* Bordure en bleu */
+            margin: 10px;
+            /* Espace autour des iframes */
+            height: 500px;
+            /* Hauteur réduite pour éviter le défilement */
+        }
+
+        .button {
+            background-color: #A50044;
+            /* Couleur grenat */
+            color: white;
+            /* Texte en blanc */
+            padding: 10px 20px;
+            /* Espacement intérieur */
+            text-decoration: none;
+            /* Supprime le soulignement */
+            border-radius: 5px;
+            /* Coins arrondis */
+            border: none;
+            /* Supprime la bordure */
+            font-size: 16px;
+            /* Taille de la police */
+            transition: background-color 0.3s ease;
+            /* Effet de transition */
+            display: inline-block;
+            /* Affiche le lien comme un bloc */
+            margin-top: 20px;
+            /* Espace au-dessus du bouton */
+        }
+
+        .button:hover {
+            background-color: #004D98;
+            /* Change la couleur au survol */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Page Principale</h1>
+
+    <div class="iframe-container">
+        <iframe src="sommaire.html" width="30%" name="f1"></iframe>
+        <iframe src="page3.html" width="65%" name="f2"></iframe>
+    </div>
+
+    <a href="../index.html" class="button">Retour au sommaire</a>
+
+</body>
+
+</html>

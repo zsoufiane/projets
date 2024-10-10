@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            /* Couleur de fond claire */
+            color: #333;
+            /* Couleur du texte */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* Centrer tout le texte */
+            padding: 20px;
+            /* Ajoute un peu d'espace autour du contenu */
+        }
+
+        h1 {
+            color: #A50044;
+            /* Grenat */
+            margin-bottom: 20px;
+            /* Espace sous le titre */
+        }
+
+        table {
+            margin: 0 auto;
+            /* Centre le tableau */
+            border-collapse: collapse;
+            /* Évite les espaces entre les cellules */
+        }
+
+        td {
+            padding: 10px;
+            /* Espacement à l'intérieur des cellules */
+        }
+
+        label {
+            text-align: right;
+            /* Aligne le texte des labels à droite */
+            display: inline-block;
+            /* Permet de contrôler le placement */
+            width: 150px;
+            /* Largeur fixe pour les labels */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            padding: 10px;
+            /* Espacement intérieur des champs */
+            border: 2px solid #004D98;
+            /* Bordure en bleu */
+            border-radius: 5px;
+            /* Coins arrondis */
+            width: 200px;
+            /* Largeur fixe pour les champs de saisie */
+            margin: 5px 0;
+            /* Espacement vertical */
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #A50044;
+            /* Grenat */
+            color: white;
+            /* Couleur du texte */
+            border: none;
+            /* Pas de bordure */
+            padding: 10px 20px;
+            /* Espacement intérieur */
+            border-radius: 5px;
+            /* Coins arrondis */
+            cursor: pointer;
+            /* Curseur pointer */
+            margin: 10px;
+            /* Espacement autour des boutons */
+            transition: background-color 0.3s;
+            /* Transition pour l'effet de survol */
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #004D98;
+            /* Bleu au survol */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulaire d'inscription</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="nom">Nom</label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom</label></td>
+                <td><input type="text" id="prenom" name="prenom" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date de naissance</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Mot de passe</label></td>
+                <td><input type="password" id="pass" name="pass" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Votre âge</label></td>
+                <td><input type="number" id="age" name="age" min="18" required></td>
+            </tr>
+            <tr>
+                <td><label for="test">Test</label></td>
+                <td><input type="text" id="test" name="test" size="60" placeholder="Tester le champ"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enregistrer">
+        <input type="reset" value="Effacer">
+    </form>
+
+</body>
+
+</html>

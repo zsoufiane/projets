@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            /* la couleur gris clair */
+            text-align: center;
+            /* pour centrer le texte */
+        }
+
+        h1 {
+            color: #004B87;
+            /* Couleur bleu FC Barcelone */
+            margin-top: 50px;
+            /* Marge supérieure */
+            font-size: 36px;
+            /* Taille de police pour le titre */
+        }
+
+        .link {
+            display: inline-block;
+            /* Permet d'utiliser padding */
+            margin: 20px 0;
+            /* Marge verticale autour des liens */
+            padding: 15px 25px;
+            /* Espacement autour du texte */
+            background-color: #004B87;
+            /* Couleur bleu FC Barcelone */
+            color: white;
+            /* Couleur du texte en blanc */
+            text-decoration: none;
+            /* Supprime le soulignement */
+            border-radius: 5px;
+            /* Coins arrondis */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Animation au survol */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Ombre portée */
+            border: 2px solid transparent;
+            /* Bordure transparente par défaut */
+        }
+
+        .link:not(:last-child) {
+            border-bottom: 2px solid #A50034;
+            /* Bordure grenat entre les boutons */
+        }
+
+        .link:hover {
+            background-color: #A50034;
+            /* Change la couleur au survol (grenat) */
+            transform: translateY(-2px);
+            /* Légère élévation au survol */
+        }
+
+        footer {
+            margin-top: 50px;
+            /* Marge supérieure pour le pied de page */
+            color: #A50034;
+            /* Couleur grenat FC Barcelone */
+            font-size: 14px;
+            /* la taille de la police du texte du bas, du footer*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu de Navigation</h1>
+    <a class="link" href="formulaire.html">Formulaire</a>
+    <a class="link" href="structuration.html">Structuration</a>
+    <br>
+    <a class="link" href="../index.html">Retour au sommaire</a> <!-- Lien positionné en bas des autres -->
+
+    <footer>
+        <p>&copy; 2024 Soufiane. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
